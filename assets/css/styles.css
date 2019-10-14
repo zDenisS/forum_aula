@@ -27,6 +27,9 @@ body {
     margin-bottom: 10px;
     float: right;
 }
+.btn-cdt{
+    margin-right: 5px;
+}
 tbody{
     background-color: white;
 }
@@ -45,4 +48,7 @@ footer{
     background-size: cover;
     color: white;
     background-image: url(../img/header-bg.jpg)
+}
+input{
+    margin-bottom: 10px;
 }
