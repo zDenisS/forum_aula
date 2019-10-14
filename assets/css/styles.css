@@ -23,6 +23,10 @@ body {
 .forum-background{
     background-color: white;
 }
+.btn-topico{
+    margin-bottom: 10px;
+    float: right;
+}
 tbody{
     background-color: white;
 }
