@@ -1,0 +1,39 @@
+body {
+    background-color: #e9ebed;
+}
+.margin-cat{
+    margin-top: 30px;
+}
+.container-forum{
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.forum-categoria{
+    background-color: #007bff;
+    padding: 10px;
+}
+.forum-background{
+    background-color: white;
+}
+tbody{
+    background-color: white;
+}
+table a{
+    color: black;
+}
+td{
+    padding: 20px;
+}
+footer{
+    color: white;
+}
+.img{
+    height: 80vh;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    background-image: url(../img/header-bg.jpg)
+}
