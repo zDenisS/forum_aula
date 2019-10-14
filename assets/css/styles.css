@@ -4,6 +4,11 @@ body {
 .margin-cat{
     margin-top: 30px;
 }
+.nav-fix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .container-forum{
     width: 100%;
     padding-right: 60px;
@@ -31,7 +36,7 @@ footer{
     color: white;
 }
 .img{
-    height: 80vh;
+    height: 60vh;
     text-align: center;
     background-size: cover;
     color: white;
