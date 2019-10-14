@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
+    <!--BARRA DE NAVEGAÇÃO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix">
         <a class="navbar-brand" href="index.html">Fórum</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,19 +31,22 @@
             
         </div>
     </nav>
+    <!--FIM DA BARRA DE NAVEGAÇÃO-->
+
+    <!-- INICIO DA AREA DE MODALS-->
 
     <!-- Modal Cadastrar -->
     <div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Criar Conta</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Criar Conta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
                     <label for="nome">Nome:</label>
                     <input type="text" name="Nome" id="nome" size="40"> <br>
                     <label for="email">Email:</label>
@@ -52,15 +55,15 @@
                     <input type="text" name="Senha" id="senha" size="22"> <br>
                     <label for="Data_nascimento">Data de Nascimento:</label>
                     <input type="date" name="Data_nascimento" id="data_nascimento">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Registrar</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                </div>
-                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Registrar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
             </div>
         </div>
+    </div>
 
      <!-- Modal Login -->
     <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -74,10 +77,10 @@
             </div>
             <div class="modal-body">
                 <form action="" method="post">
-                <label for="email">Email:</label>
-                <input type="email" name="Email" id="email" size="40"> <br>
-                <label for="senha">Senha:</label>
-                <input type="text" name="Senha" id="senha" size="22"> <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" size="40"> <br>
+                    <label for="senha">Senha:</label>
+                    <input type="text" name="Senha" id="senha" size="22"> <br>
                 </form>
             </div>
             <div class="modal-footer">
@@ -88,10 +91,14 @@
         </div>
     </div>
 
+    <!--FIM DA AREA DE MODALS-->
+
+    <!--IMAGEM DE FUNDO-->
     <div class="img">
         
     </div>
 
+    <!--TABELA DE CATEGORIAS-->
     <div class=" margin-cat container-forum">
         <div>
             <table class="table table-hover">
@@ -105,6 +112,40 @@
                 <tbody>
                     <tr>
                     <td><a href="categoria1.html">Categoria 1</a></td>
+                    <td>3</td>
+                    <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="">Categoria 2</a></td>
+                    <td>0</td>
+                    <td>0</td>
+                    </tr>
+
+                    <tr>
+                    <td><a href="">Categoria 3</a></td>
+                    <td>0</td>
+                    <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+    </div>
+    <br>
+
+    <div class=" margin-cat container-forum">
+        <div>
+            <table class="table table-hover">
+                <thead  class="forum-categoria">
+                    <tr >
+                    <th scope="col">Categorias</th>
+                    <th scope="col">Tópicos</th>
+                    <th scope="col">Mensagens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td><a href="">Categoria 1</a></td>
                     <td>0</td>
                     <td>0</td>
                     </tr>
@@ -125,42 +166,8 @@
         </div>   
     </div>
     <br>
-    <div class=" margin-cat container-forum">
-            <div>
-                <table class="table table-hover">
-                    <thead  class="forum-categoria">
-                        <tr >
-                        <th scope="col">Categorias</th>
-                        <th scope="col">Tópicos</th>
-                        <th scope="col">Mensagens</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td><a href="">Categoria 1</a></td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-                        
-                        <tr>
-                        <td><a href="">Categoria 2</a></td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-    
-                        <tr>
-                        <td><a href="">Categoria 3</a></td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>   
-        </div>
-        <br>
 
-
-
+    <!--RODAPÉ-->    
     <div class="bg-dark">
         <footer class="page-footer font-small unique-color-dark pt-4">
 
