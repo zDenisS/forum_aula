@@ -22,13 +22,15 @@
                 <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
+            <div class="nav-avatar">
+                <img id="img-avatar1" class="avatarforum" src="assets/img/avatar0.png" alt="">
+            </div>
             <button type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalCadastro">
                     Cadastrar
             </button>
             <button type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalLogin">
                     Login
             </button>
-            
         </div>
     </nav>
     <!--FIM DA BARRA DE NAVEGAÇÃO-->
@@ -77,14 +79,14 @@
             </div>
             <div class="modal-body">
                 <form action="" method="post">
-                    <label for="email">Email:</label>
-                    <input type="email" name="Email" id="email" size="40"> <br>
-                    <label for="senha">Senha:</label>
-                    <input type="text" name="Senha" id="senha" size="22"> <br>
+                    <label for="login-email">Email:</label>
+                    <input type="email" name="Email" id="login-email" size="40"> <br>
+                    <label for="login-senha">Senha:</label>
+                    <input type="text" name="Senha" id="login-senha" size="22"> <br>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Efetuar Login</button>
+                <button type="button" class="btn btn-primary" onclick="Logar()">Efetuar Login</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             </div>
             </div>
@@ -100,6 +102,17 @@
 
     <!--TABELA DE CATEGORIAS-->
     <div class=" margin-cat container-forum">
+        <div class="mg-avatar">
+            <div id="div-avatar" class ="mg-avatar1 float-left" >
+                <img id="img-avatar" class="avatarforum" src="assets/img/avatar0.png" alt="">
+            </div>
+            <div>
+                <h5 class="mg-status"> Status: <label id="status" for="">Desconectado</label> <br> </h5>
+                <div class="mg-status">Nome:   <label id="status-nome" for="">...</label> <br></div>
+                <div class="mg-status"> Email:  <label id="status-email" for="">...</label></div>
+                
+            </div>
+        </div>
         <div>
             <table class="table table-hover">
                 <thead  class="forum-categoria">
@@ -178,7 +191,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="assets/js/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

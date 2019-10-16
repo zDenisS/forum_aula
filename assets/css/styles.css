@@ -52,3 +52,29 @@ footer{
 input{
     margin-bottom: 10px;
 }
+.avatarforum{
+    width: 30%
+}
+.mg-avatar{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(180, 174, 174);
+    padding: 10px;
+}
+.mg-avatar1{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#div-avatar{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.nav-avatar{
+    float: right;
+    width: 10%;
+    margin-right: -70px;
+    
+}
+.mg-status{
+    margin-bottom: -2px; 
+}
