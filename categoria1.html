@@ -7,33 +7,94 @@
     <title>Fórum</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--body onLoad="Logar()"></body>-->
+    
+    
 </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix">
-                <a class="navbar-brand" href="index.html">Fórum</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                    <div class="nav-avatar">
-                        <img id="img-avatar" class="avatarforum" src="assets/img/avatar0.png" alt="">
-                    </div>
-                    <button type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalCadastro">
-                            Cadastrar
-                    </button>
-                    <button type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalLogin">
-                            Login
-                    </button>
-                </div>
-            </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix">
+    <a class="navbar-brand" href="index.html">Fórum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <button id="botao-cadastrar" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalCadastro">
+            Cadastrar
+        </button>
+        <button id="botao-login" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalLogin">
+            Login
+        </button>
+        <div class="nav-avatar">
+            <img id="img-avatar2" class="avatarforum" src="assets/img/avatar0.png" style="visibility: hidden" alt="">
+        </div>
+        <button id="botao-sair" type="button"class= "btn btn-primary" style="visibility: hidden;" >Sair</button>
+    </div>
+    </nav>
+
     <div class="img">
         
+    </div>
+
+    <div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Criar Conta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="Nome" id="nome" size="40"> <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" size="40"> <br>
+                    <label for="senha">Senha:</label>
+                    <input type="text" name="Senha" id="senha" size="22"> <br>
+                    <label for="Data_nascimento">Data de Nascimento:</label>
+                    <input type="date" name="Data_nascimento" id="data_nascimento">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Registrar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal Login -->
+    <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <label for="login-email">Email:</label>
+                    <input type="email" name="Email" id="login-email" size="40"> <br>
+                    <label for="login-senha">Senha:</label>
+                    <input type="text" name="Senha" id="login-senha" size="22"> <br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="Logar()">Efetuar Login</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+            </div>
+        </div>
     </div>
 
     <div class=" margin-cat container-forum">
@@ -81,7 +142,7 @@
             </div>
         </footer>
     </div>
-
+    
     <script src="assets/js/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

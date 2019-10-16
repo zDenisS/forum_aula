@@ -15,4 +15,5 @@ function Logar(){
     document.getElementById("img-avatar1").style.visibility= "visible";
     document.getElementById("botao-login").style.visibility = "hidden";
     document.getElementById("botao-cadastrar").style.visibility = "hidden";
+
 }
