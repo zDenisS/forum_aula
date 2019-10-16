@@ -10,5 +10,9 @@ function Logar(){
     document.getElementById("img-avatar").src = avatar1;
     document.getElementById("img-avatar1").src = avatar1;
 
-    document.getElementById("div-avatar").style.marginTop = "-10px"
+    document.getElementById("div-avatar").style.marginTop = "-10px";
+    document.getElementById("botao-sair").style.visibility = "visible";
+    document.getElementById("img-avatar1").style.visibility= "visible";
+    document.getElementById("botao-login").style.visibility = "hidden";
+    document.getElementById("botao-cadastrar").style.visibility = "hidden";
 }
