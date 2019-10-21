@@ -18,6 +18,15 @@ function Logar(){
 
 }
 
+function Logar2(){
+
+    document.getElementById("botao-sair").style.visibility = "visible";
+    document.getElementById("img-avatar1").style.visibility= "visible";
+    document.getElementById("botao-login").style.visibility = "hidden";
+    document.getElementById("botao-cadastrar").style.visibility = "hidden";
+
+}
+
 function Cadastrar(){
     var nome = document.getElementById("Cnome").value;
     var email = document.getElementById("Cemail").value;
@@ -34,6 +43,8 @@ function Sair(){
     var avatar1 = "assets/img/avatar0.png";
     var conectado = "Desconectado";
     var email = "...";
+    var senha = "";
+    var MEmail = "";
     var imagem = document.getElementsByClassName("mg-avatar1");
     document.getElementById("status-email").innerHTML = email;
     document.getElementById("status-nome").innerHTML = "...";
@@ -47,9 +58,17 @@ function Sair(){
     document.getElementById("img-avatar1").style.visibility= "hidden";
     document.getElementById("botao-login").style.visibility = "visible";
     document.getElementById("botao-cadastrar").style.visibility = "visible";
+
+    document.getElementById("login-senha").value = senha;
+    document.getElementById("login-email").value = MEmail;
 }
 
 function Sair2(){
+    var senha = "";
+    var MEmail = "";
+    document.getElementById("login-senha").value = senha;
+    document.getElementById("login-email").value = MEmail;
+
 
     document.getElementById("botao-sair").style.visibility = "hidden";
     document.getElementById("img-avatar1").style.visibility= "hidden";
