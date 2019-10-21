@@ -13,29 +13,29 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix">
-    <a class="navbar-brand" href="index.html">Fórum</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fix">
+        <a class="navbar-brand" href="index.html">Fórum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <button id="botao-cadastrar" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalCadastro">
-            Cadastrar
-        </button>
-        <button id="botao-login" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalLogin">
-            Login
-        </button>
-        <div class="nav-avatar">
-            <img id="img-avatar2" class="avatarforum" src="assets/img/avatar0.png" style="visibility: hidden" alt="">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button id="botao-cadastrar" style="visibility: hidden" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalCadastro">
+                Cadastrar
+            </button>
+            <button id="botao-login" style="visibility: hidden" type="button" class="btn btn-primary btn-cdt" data-toggle="modal" data-target="#ModalLogin">
+                Login
+            </button>
+            <div class="nav-avatar">
+                <img id="img-avatar1" class="avatarforum" src="assets/img/avatar1.png" alt="">
+            </div>
+            <button id="botao-sair" type="button"class= "btn btn-primary" onclick="Sair2()" >Sair</button>
         </div>
-        <button id="botao-sair" type="button"class= "btn btn-primary" style="visibility: hidden;" >Sair</button>
-    </div>
     </nav>
 
     <div class="img">
@@ -98,7 +98,7 @@
     </div>
 
     <div class=" margin-cat container-forum">
-        <h3 class="float-left">Categoria 1</h3>
+        <h3 class="float-left">Programação</h3>
         <input class="btn btn-primary btn-topico" type="button" value="Novo Tópico">
         <div>
             <table class="table table-hover">
