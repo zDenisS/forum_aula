@@ -99,7 +99,16 @@
 
     <div class=" margin-cat container-forum">
         <h3 class="float-left">Manutenção</h3>
-        <input class="btn btn-primary btn-topico" type="button" value="Novo Tópico">
+        <input class="btn btn-primary btn-topico" type="button" value="Novo Tópico" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body float-right">
+                <label for="">Titulo</label>
+                <input type="text"> <br>
+                <label for="">Mensagem</label>
+                <textarea name="" id="" cols="150" rows="15"></textarea>
+                <button class="btn-primary">Enviar</button>
+            </div>
+        </div>
         <div>
             <table class="table table-hover">
                 <thead  class="forum-categoria">

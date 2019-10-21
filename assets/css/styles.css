@@ -2,6 +2,9 @@ body {
     background-color: #e9ebed;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+nav{
+    z-index: 1;
+}
 .margin-cat{
     margin-top: 30px;
 }
