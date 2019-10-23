@@ -75,3 +75,35 @@ function Sair2(){
     document.getElementById("botao-login").style.visibility = "visible";
     document.getElementById("botao-cadastrar").style.visibility = "visible";
 }
+
+
+
+function adicionaLinha() {
+    var tabela = document.getElementById("tabela");
+    var numeroLinhas = tabela.rows.length;
+    var linha = tabela.insertRow(numeroLinhas);
+    var celula1 = linha.insertCell(0);
+    var celula2 = linha.insertCell(1);   
+    var celula3 = linha.insertCell(2); 
+
+    var Nmensagem = "0";
+    var Nvisual = "0";
+
+    celula1.innerHTML = "<a href=''>" + document.getElementById("titulo").value +"</a>"; 
+    celula2.innerHTML =  Nmensagem; 
+    celula3.innerHTML =  Nvisual;
+}
+
+// funcao remove uma linha da tabela
+function removeLinha(linha) {
+  var i=linha.parentNode.parentNode.rowIndex;
+  document.getElementById("tabela").deleteRow(i);
+} 
+
+function responder(){
+    var resposta = document.getElementById("MsgR").value;
+    document.getElementById("textoResposta").value = resposta;
+
+    document.getElementById("imagemResposta").style.visibility = "visible";
+    document.getElementById("textoResposta").style.visibility = "visible";   
+}

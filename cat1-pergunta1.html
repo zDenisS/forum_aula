@@ -97,47 +97,39 @@
         </div>
     </div>
     <div class=" margin-cat container-forum">
-        <h3 class="float-left">Programação</h3>
-        <input class="btn btn-primary btn-topico" type="button" value="Novo Tópico" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <h3 class="float-left">como funcionar um For?</h3>
+        <input class="btn btn-primary btn-topico" type="button" value="Responder" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <div class="collapse" id="collapseExample">
             <div class="card card-body float-right">
-                <label for="">Titulo</label>
-                <input id="titulo" type="text"> <br>
                 <label for="">Mensagem</label>
-                <textarea name="" id="" cols="150" rows="15"></textarea>
-                <button class="btn-primary" onclick="adicionaLinha()">Enviar</button>
+                <textarea name="" id="MsgR" cols="150" rows="15"></textarea>
+                <button id="enviarResposta" class="btn-primary" onclick="responder()" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" >Enviar</button>
             </div>
         </div>
-        <div>
-            <table id="tabela" class="table table-hover">
-                <thead  class="forum-categoria">
-                    <tr >
-                    <th scope="col">Tópicos</th>
-                    <th scope="col">Mensagens</th>
-                    <th scope="col">Visualizações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td><a href="cat1-pergunta1.html" >como funcionar um For?</a></td>
-                    <td>0</td>
-                    <td>0</td>
-                    </tr>
-                    
-                    <tr>
-                    <td><a href="">problema com código c#</a></td>
-                    <td>0</td>
-                    <td>0</td>
-                    </tr>
+        <br>
 
-                    <tr>
-                    <td><a href="">ajuda</a></td>
-                    <td>0</td>
-                    <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>   
+            <div class="topico">
+                <div id="div-avatar" class ="mg-avatar1 float-left" >
+                    <img id="img-avatar" class="avatarforum" src="assets/img/avatar1.png" alt="">
+                </div>
+                <div>
+                    <textarea class="resposta" name="" id="" cols="30" rows="20">
+                        Estou em duvida de como funciona um FOR em c#.
+                    </textarea>                    
+                </div>
+            </div>
+            
+            <div id="divresposta" style="margin-top: -10px;" class="topico">
+                    <div id="div-avatar" class ="mg-avatar1 float-left" >
+                        <img id="imagemResposta" style="visibility: hidden; margin-right: 10px" id="img-avatar" class="avatarforum" src="assets/img/avatar2.png" alt="">
+                    </div>
+                    <div>
+                        <textarea id="textoResposta" style="visibility: hidden;" class="resposta" name="" id="" cols="30" rows="20">
+                            
+                        </textarea>                    
+                    </div>
+            </div>
+        
     </div>
     <br>
     <div class="bg-dark">

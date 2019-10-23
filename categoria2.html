@@ -103,14 +103,14 @@
         <div class="collapse" id="collapseExample">
             <div class="card card-body float-right">
                 <label for="">Titulo</label>
-                <input type="text"> <br>
+                <input id="titulo" type="text"> <br>
                 <label for="">Mensagem</label>
                 <textarea name="" id="" cols="150" rows="15"></textarea>
-                <button class="btn-primary">Enviar</button>
+                <button class="btn-primary" onclick="adicionaLinha()">Enviar</button>
             </div>
         </div>
         <div>
-            <table class="table table-hover">
+            <table id="tabela" class="table table-hover">
                 <thead  class="forum-categoria">
                     <tr >
                     <th scope="col">Tópicos</th>
