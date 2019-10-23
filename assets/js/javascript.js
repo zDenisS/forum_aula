@@ -35,7 +35,7 @@ function Cadastrar(){
 
     document.getElementById("UCnome").innerHTML = nome;
     document.getElementById("UCemail").innerHTML = email;
-    document.getElementById("UCsenha").value = senha;
+    document.getElementById("UCsenha").innerHTML = senha;
     document.getElementById("labelteste").innerHTML = data;
 }
 
@@ -63,6 +63,7 @@ function Sair(){
     document.getElementById("login-email").value = MEmail;
 }
 
+
 function Sair2(){
     var senha = "";
     var MEmail = "";
@@ -77,7 +78,7 @@ function Sair2(){
 }
 
 
-
+// adiciona nova LInha na tabela de tópicos
 function adicionaLinha() {
     var tabela = document.getElementById("tabela");
     var numeroLinhas = tabela.rows.length;
@@ -100,10 +101,18 @@ function removeLinha(linha) {
   document.getElementById("tabela").deleteRow(i);
 } 
 
+// função para resposta do tópico
 function responder(){
     var resposta = document.getElementById("MsgR").value;
     document.getElementById("textoResposta").value = resposta;
 
     document.getElementById("imagemResposta").style.visibility = "visible";
     document.getElementById("textoResposta").style.visibility = "visible";   
+}
+
+
+//nao finalizado
+function novaSenha(){
+    var novasenha = document.getElementById("novaSenha").value;
+    document.getElementById("UCsenha").value = novasenha;
 }

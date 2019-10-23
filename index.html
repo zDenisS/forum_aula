@@ -87,12 +87,39 @@
                 </form>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ModalRecuperar" >Recuperar Senha</button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="Logar()">Efetuar Login</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Recuperar senha -->
+    <div class="modal fade" id="ModalRecuperar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mudar Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <label for="login-email">Email:</label>
+                        <input type="email" name="Email" id="login-email" size="40"> <br>
+                        <label for="Nlogin-senha">Nova Senha:</label>
+                        <input type="text" name="Senha" id="login-senha" size="22"> <br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+                </div>
+            </div>
+        </div>
 
     <!--MODAL ULTIMO CADASTRO-->
 
@@ -112,7 +139,7 @@
                     <label for="email">Email:</label>
                     <label id="UCemail" for=""></label> <br>
                     <label for="senha">Senha:</label>
-                    <input id="UCsenha" type="password" name="password" disabled> <br>
+                    <label id="UCsenha" for=""></label> <br>
                     <label for="Data_nascimento">Data de Nascimento:</label>
                     <label for="" id="labelteste"></label>
                 </form>
