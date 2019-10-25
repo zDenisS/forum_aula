@@ -46,6 +46,7 @@ function Sair(){
     var senha = "";
     var MEmail = "";
     var imagem = document.getElementsByClassName("mg-avatar1");
+
     document.getElementById("status-email").innerHTML = email;
     document.getElementById("status-nome").innerHTML = "...";
     document.getElementById("status").innerHTML = conectado;
@@ -113,6 +114,6 @@ function responder(){
 
 //nao finalizado
 function novaSenha(){
-    var novasenha = document.getElementById("novaSenha").value;
-    document.getElementById("UCsenha").value = novasenha;
+    var novasenha = document.getElementById("Nlogin-senha").value;
+    document.getElementById("UCsenha").innerHTML = novasenha;
 }
